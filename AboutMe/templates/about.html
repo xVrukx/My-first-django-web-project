@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{% static 'navbar.css' %}">
+    <style>
+      body {
+        margin: 0;
+        background-color: #000;
+        color: #eee;
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+
+      .content {
+        max-width: 900px;
+        margin: 80px auto;
+        padding: 40px;
+        background-color: #111;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(255, 106, 0, 0.3);
+        z-index: 10;
+        position: relative;
+      }
+
+      h1 {
+        color: #ff6a00;
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        line-height: 1.8;
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 20px;
+      }
+
+      strong {
+        color: #ff6a00;
+      }
+
+      footer {
+        margin-top: 40px;
+        text-align: right;
+        font-style: italic;
+        color: #777;
+      }
+
+      .highlight-section {
+        margin-top: 30px;
+        padding-left: 15px;
+        border-left: 3px solid #ff6a00;
+      }
+
+      ul {
+        margin: 10px 0 20px 20px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      /* Optional glow effect */
+      .content:hover {
+        box-shadow: 0 0 25px rgba(255, 106, 0, 0.6);
+        transition: all 0.3s ease;
+      }
+    </style>
+</head>
+<body>
+       <nav class=" menu-bar">
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Register">Register</a></li>
+        </ul>
+    </nav>
+  <div class="content">
+    <h1>About Me</h1>
+
+    <p><strong>🧠 Who Am I?</strong><br>
+      Hi, I'm <strong>Vruk</strong> — a passionate software programming student with a love for coding, electronics, cybersecurity, and AI. I enjoy breaking things down to build them back up better, and I’m always experimenting with projects that combine hardware and software.
+    </p>
+
+    <div class="highlight-section">
+      <p><strong>💻 Programming & Development</strong></p>
+      <ul>
+        <li><strong>Python:</strong> tkinter, requests, BeautifulSoup, os, pathlib, pytest, colorama, and more.</li>
+        <li><strong>MySQL:</strong> Designing and managing relational DBs integrated with Python.</li>
+        <li><strong>Django:</strong> Creating full-stack web apps with models, views, forms, and Bootstrap.</li>
+        <li><strong>HTML/CSS:</strong> Clean, responsive UI building. Learning Bootstrap to speed up workflow.</li>
+        <li><strong>JavaScript:</strong> Basic level — DOM manipulation and simple logic.</li>
+      </ul>
+
+      <p><strong>🧪 Testing & Debugging</strong></p>
+      <ul>
+        <li><strong>Pytest:</strong> Writing test cases, using fixtures, mocking, and verifying logic and GUI.</li>
+        <li>Testing full applications like my <em>Library Management System</em> with proper structure.</li>
+      </ul>
+
+      <p><strong>📦 Projects & Tools</strong></p>
+      <ul>
+        <li><strong>Custom Python Terminal:</strong> With autocomplete, history, and internal commands (pyreadline3).</li>
+        <li><strong>Library Management System:</strong> Tkinter GUI + Python + MySQL, with full test coverage.</li>
+        <li><strong>Speech-to-Text:</strong> Real-time STT using Vosk, compared with Whisper.</li>
+        <li><strong>Face Recognition:</strong> Using OpenCV for detection and recognition from scratch.</li>
+        <li><strong>Cyberdeck Terminal:</strong> Custom terminal UI for Raspberry Pi 4B on XFCE.</li>
+        <li><strong>Boost Converter:</strong> 5V 3A circuit from salvaged parts to learn electronics.</li>
+        <li><strong>Web Scrapers:</strong> Using BeautifulSoup and requests for live data extraction.</li>
+      </ul>
+
+      <p><strong>🛠️ Hardware & Electronics</strong></p>
+      <ul>
+        <li>Working with Raspberry Pi Zero 2 W, OLED displays, audio interfaces, and adapters.</li>
+        <li>Building and testing circuits with a focus on optimization and power efficiency.</li>
+      </ul>
+
+      <p><strong>🚀 Mindset</strong></p>
+      <ul>
+        <li>I learn by building and breaking — always hands-on and curious.</li>
+        <li>I love collaborating with humans and machines alike — shout out to <strong>KI 🤖</strong>!</li>
+        <li>Every project is a step toward mastering my craft and exploring the edge of what's possible.</li>
+      </ul>
+    </div>
+
+    <footer>- Yuvraj D. Sirganor</footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+   <link rel="stylesheet" href="{% static 'navbar.css' %}">
+
+      <style>
+          body {
+    margin: 0;
+    background-color: #000;
+    color: #eee;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  /* === Content Wrapper === */
+  .content {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 30px;
+    z-index: 10;
+    position: relative;
+    background-color: #111;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 106, 0, 0.3);
+  }
+        .content:hover {
+        box-shadow: 0 0 25px rgba(255, 106, 0, 0.6);
+        transition: all 0.3s ease;
+      }
+  /* === Input Fields === */
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+    color: #ff6a00;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .form-control:focus {
+    outline: none;
+    border-color: #ff6a00;
+    background-color: #111;
+  }
+
+  /* === Buttons === */
+  .btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff6a00;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #e55c00;
+  }
+
+  /* === Grid System === */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .col-md-4 {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+
+  /* === Typography === */
+  h1, h2, h3 {
+    color: #ff6a00;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  p {
+    color: #ccc;
+    line-height: 1.6;
+  }
+
+  a {
+    color: #ff6a00;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  a:hover {
+    border-color: #ff6a00;
+  }
+
+  
+</style>
+
+</head>
+
+<body>
+
+        <nav class=" menu-bar">
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Register">Register</a></li>
+        </ul>
+    </nav>
+  <div class="content">
+    <form action="{% url 'Register' %}" method="POST">
+      {% csrf_token %}
+      <div class="row">
+        <div class="col-md-4">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" class="form-control" id="firstName">
+        </div>
+        <div class="col-md-4">
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" class="form-control" id="lastname">
+        </div>
+        <div class="col-md-4">
+          <label for="EmailId">Email ID</label>
+          <input type="text" name="EmailId" class="form-control" id="EmailId">
+        </div>
+      </div>
+      <br>
+     <center><input type="submit" class="btn btn-danger mt-5" value="Register"></center> 
+    </form>
+  </div>
+</body>
+</html>

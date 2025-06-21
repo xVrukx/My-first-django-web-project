@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django-specific
+db.sqlite3
+media/
+staticfiles/
+.env
+*.log
+
+# Migrations (optional to ignore, usually keep them!)
+# */migrations/*.py
+# */migrations/*.pyc
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Node (if using JS tools)
+node_modules/
+
+# Test or coverage
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Backup & temp
+*.bak
+*.tmp
+*.swp

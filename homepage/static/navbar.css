@@ -1,0 +1,21 @@
+          .menu-bar{
+            background-color: black;
+            overflow: hidden;
+        }
+        .menu-bar ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+        }
+        .menu-bar li {
+            float: left;
+        }
+        .menu-bar li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .menu-bar li a:hover {
+            background-color: black;}
